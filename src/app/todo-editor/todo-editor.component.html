@@ -1,0 +1,9 @@
+<span>
+  <label>Add a new entry: </label>
+  <input 
+    type="search"
+    autofocus=""
+    placeholder="Enter new item..."
+    [(ngModel)] = "newItem"
+    (keydown.enter) = "pushTodo()"/>
+</span>

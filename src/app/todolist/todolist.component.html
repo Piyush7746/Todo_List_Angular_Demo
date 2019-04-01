@@ -1,0 +1,6 @@
+<p>
+  Todo list
+</p>
+<ul>
+  <li *ngFor="let item of todoList; let index = index" (click)="removeItem(index)">{{item}}</li>
+</ul>

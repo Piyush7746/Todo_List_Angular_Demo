@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+
+<table>
+  <tr>
+    <td><app-todo-editor (todo)="pushTodo($event)"></app-todo-editor></td>
+    <td><app-todolist [todoList]="todoList" (index)="remove($event)"></app-todolist></td>
+  </tr>
+</table>
+
+<router-outlet></router-outlet>
